@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+  <meta charse="UTF-8" />
+  <title>
+    Videos API
+  </title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <form>
+    <label id="tag" for="keyWord">Videos about:</label>
+    <input id="keyWord" placeholder="Search" type="text" />
+    <button id="searchBtn">Search</button>
+  </form>
+  <ul id="videosList"></ul>
+  <div class="pagination">
+    <button id="prevBtn">Preview</button>
+    <button id="nextBtn">Next</button>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
