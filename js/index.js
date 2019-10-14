@@ -5,9 +5,9 @@ function getVideoList(token) {
   const input = $('#keyWord').val();
   let url;
   if (!token) {
-    url = `https://www.googleapis.com/youtube/v3/search?q=${input}&part=snippet&key=AIzaSyDpGTxZFZOq-fjmjcBQR7FSHfFFgfIixJU&type:video&maxResults=10`;
+    url = `https://www.googleapis.com/youtube/v3/search?q=${input}&part=snippet&key=AIzaSyDpGTxZFZOq-fjmjcBQR7FSHfFFgfIixJU&type=video&maxResults=10`;
   } else {
-    url = `https://www.googleapis.com/youtube/v3/search?q=${input}&part=snippet&key=AIzaSyDpGTxZFZOq-fjmjcBQR7FSHfFFgfIixJU&type:video&maxResults=10&pageToken=${token}`;
+    url = `https://www.googleapis.com/youtube/v3/search?q=${input}&part=snippet&key=AIzaSyDpGTxZFZOq-fjmjcBQR7FSHfFFgfIixJU&type=video&maxResults=10&pageToken=${token}`;
   }
   $.ajax({
     url: url,
